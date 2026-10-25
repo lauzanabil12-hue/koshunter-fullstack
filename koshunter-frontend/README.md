@@ -1,16 +1,33 @@
-# React + Vite
+# KosHunter Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Tugas Praktikum Week 6 - React Dasar
 
-Currently, two official plugins are available:
+**Data Mahasiswa:**
+- Nama: Muhammad Lauza Nabil
+- NIM: 103022400118
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Deskripsi Aplikasi
+KosHunter adalah aplikasi web berbasis React JS dan Bootstrap 5 untuk mengelola daftar kosan mahasiswa Telkom University. Dibuat dengan Vite untuk memenuhi tugas praktikum React dasar (penerapan Component, Props, State, Form, dan Conditional Rendering).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Pembagian Komponen React
+1. `Navbar.jsx`: Header navigasi aplikasi.
+2. `SummaryCard.jsx`: Ringkasan total unit kos yang terdaftar.
+3. `KosForm.jsx`: Form input untuk menambah data kos baru.
+4. `KosItem.jsx`: Baris data item kos pada tabel.
+5. `KosList.jsx`: Tabel daftar kos dengan fitur `.map()` dan Conditional Rendering.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## Bukti Tampilan Aplikasi
+### 1. Terminal Running (npm run dev)
+![Terminal npm run dev](SS-1-terminal-npm-run-dev.png)
+
+### 2. Tampilan Utama Aplikasi
+![Tampilan Utama](SS-2-tampilan-utama.png)
+
+### 3. Conditional Rendering (Data Kosong)
+![Conditional Rendering](SS-3-conditional-rendering.png)
