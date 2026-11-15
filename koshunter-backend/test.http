@@ -1,0 +1,66 @@
+### 1. GET - Ambil Semua Data Kos
+GET http://localhost:3000/kos
+
+
+
+### 2. POST - Tambah Data Kos Baru (Sukses - 201 Created)
+POST http://localhost:3000/kos
+Content-Type: application/json
+
+{
+  "namaKos": "Wisma Campur Telekomunikasi",
+  "hargaPerBulan": 950000,
+  "tipeKos": "Campur",
+  "lokasi": "Jl. Telekomunikasi No. 88, Bojongsoang",
+  "tersedia": true
+}
+
+
+
+### 3. GET :id - Ambil Detail Kos ID 3 (Sukses - 200 OK)
+GET http://localhost:3000/kos/3
+
+
+### 4. PATCH :id - Ubah Data Kos ID 3 (Sukses - 200 OK)
+PATCH http://localhost:3000/kos/3
+Content-Type: application/json
+
+{
+  "hargaPerBulan": 1000000,
+  "tersedia": false
+}
+
+
+### 5. DELETE :id - Hapus Data Kos ID 3 (Sukses - 200 OK)
+DELETE http://localhost:3000/kos/3
+
+
+
+### 6. ERROR 409 (ConflictException) - Nama Kos Duplikat
+POST http://localhost:3000/kos
+Content-Type: application/json
+
+{
+  "namaKos": "Kos Putra Sukabirus Jaya",
+  "hargaPerBulan": 850000,
+  "tipeKos": "Putra",
+  "lokasi": "Jl. Sukabirus No. 12, Dayeuhkolot"
+}
+
+
+
+### 7. ERROR 404 (NotFoundException) - ID Tidak Ditemukan
+GET http://localhost:3000/kos/999
+
+
+
+### 8. ERROR 400 (ValidationPipe) - Data Tidak Valid
+POST http://localhost:3000/kos
+Content-Type: application/json
+
+{
+  "namaKos": "AB",
+  "hargaPerBulan": 50000,
+  "tipeKos": "Bebas",
+  "lokasi": "Sini"
+}
