@@ -1,8 +1,3 @@
-## Cara Menjalankan Proyek
-
-1. **Backend (NestJS)** — masuk ke folder `koshunter-backend`, jalankan `npm install`, lalu `npm run start:dev`.
-2. **Frontend (React)** — masuk ke folder `koshunter-frontend`, jalankan `npm install`, lalu `npm run dev`.
-
 ## Endpoint REST API (`/kos`)
 - `GET /kos` — Mengambil seluruh daftar kos (`200 OK`)
 - `GET /kos/:id` — Mengambil detail kos berdasarkan ID (`200 OK` / `404 Not Found`)
